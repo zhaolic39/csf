@@ -1,0 +1,323 @@
+/* CSS Document */
+
+/*--------------��̳��ҳҳ��css--------------*/
+body {
+	font-size:12px;
+	background-color:#FFFFFF;
+}
+li {
+	list-style-type:none;
+	margin-left:0px;
+}
+a:link {
+	color:#0065CE;
+	text-decoration:none;
+}
+a:visited { 
+	color: #0065CE; 
+	text-decoration: none
+} 
+a:hover { 
+	color:#FB2424; 
+	text-decoration:none;
+}
+a:active { 
+	color: #FB2424; 
+	text-decoration:none
+}
+
+.tc_parent {
+	border-style:solid;
+	border:1px;
+	border-color:#94adcc;
+	text-align:left;
+}
+.tc_child {
+	border-style:solid;
+	border-left-color:#f8f8f8;
+	border-right-color:#A2C4DD;
+	border-top-color:#f8f8f8;
+	border-bottom-color:#A2C4DD;
+}
+.tc_child1 {
+	border-style:solid;
+	text-align:center;
+	border-left-color:#ffffff;
+	border-right-color:#ffffff;
+	border-top-color:#f8f8f8;
+	border-bottom-color:#A2C4DD;
+	background-color:#eff5fa;
+}
+.tc_child2 {
+	border-style:solid;
+	border-left-color:#f8f8f8;
+	border-top-color:#f8f8f8;	
+	border-right-color:#f8f8f8;
+	border-bottom-color:#A2C4DD;
+	padding:5px 0 10px 0px;
+	background-color:#ffffff;	
+	list-style-type:none;
+}
+.tc_child3 {
+	border-style:solid;
+	border-left-color:#f8f8f8;
+	border-top-color:#f8f8f8;
+	border-bottom-color:#A2C4DD;	
+	border-right-color:#ffffff;
+	padding:10px 0 10px 10px;
+	list-style-type:none;
+	text-align:center;
+}
+.tc_child4 {
+	border:1px solid;
+	border-left-color:#f8f8f8;
+	border-right-color:#729DD8;
+	border-top-color:#f8f8f8;
+	border-bottom-color:#A2C4DD;
+	height:24px;
+	line-height:24px;
+	font-weight:bold;
+	color:#055A78;
+	background-image:url(../images/forum/xpTable_header2.gif);
+	text-align:center;
+}
+.tc_child5 {
+	border-style:solid;
+	border-left-color:#ffffff;
+	border-right-color:#ffffff;
+	border-top-color:#f8f8f8;
+	border-bottom-color:#A2C4DD;
+	background-color:#eff5fa;
+	padding-left:10px;
+}
+
+
+.title_btnpositon {
+	padding:8px 10px 5px 30px;
+	border:1px;
+	border-style:solid;
+	border-left-color:#ffffff;
+	border-right-color:#ffffff;
+	border-top-color:#ffffff;
+	border-bottom-color:#ffffff;
+	background-image:url(../images/forum/toolbar_bg1.gif);
+	height:21px;
+	line-height:21px;
+}
+
+.title_btnpositon1 {
+	padding:5px 10px;
+	float:left;
+	width:80px;
+	
+}
+.title_btnpositon2 {
+	padding:5px 0px;
+	float:left;
+}
+.title_btnpositon3 {
+	border:1px;
+	border-style:solid;
+	border-left-color:#ffffff;
+	border-right-color:#ffffff;
+	border-top-color:#ffffff;
+	border-bottom-color:#ffffff;
+	background-image:url(../images/forum/toolbar_bg1.gif);
+	height:30px;
+	line-height:30px;
+	padding:5px 0px 5px 0px;
+}
+.title_child {
+	color:#888888; 
+	font-size:12px;
+}
+.title_type {
+	text-decoration:none;
+}
+.title_type a:link,.title_type a:visited {
+	color: #009961;
+	text-decoration:none;
+}
+.title_type a:hover,.title_type a:active {
+	color: #ff9900;
+	text-decoration:none;
+}
+
+.title_name a:link,.title_name a:visited {
+	color:990000;
+	text-decoration:none;
+}
+.title_type a:hover,.title_name a:active {
+	color: #ff9900;
+	text-decoration:none;
+}
+.title_href a:hover, .title_href a:active: {
+	text-decoration:none;
+	color:#FB2424;
+}
+.title_href a:link, .title_href a:visited:{
+	color: #00448b;
+	text-decoration:none;
+}
+/*--------------��̳ҳ��css--------------*/
+
+
+/*--------------listҳ��css--------------*/
+.title_type1 {
+	text-decoration:none;
+	color:#0069B7;
+}
+.title_type1 a:link,.title_type1 a:visited {
+	color: #0065ce;
+	text-decoration:none;
+}
+.title_type1 a:hover,.title_type1 a:active {
+	color: #ff9900;
+	text-decoration:none;
+}
+.searchbar {
+	width:100%; 
+	float:left; 
+	padding:5px;0px;0px;0px; 
+	vertical-align:bottom;
+	background-image:url(../images/forum/toolbar_bg1.gif);
+}
+.tc_child6 {
+	border-style:solid;
+	border-left-color:#f8f8f8;
+	border-top-color:#f8f8f8;	
+	border-right-color:#f8f8f8;
+	border-bottom-color:#A2C4DD;
+	padding:10px 0 10px 10px;
+	background-color:#ffffff;
+	text-align:center;
+	list-style-type:none;
+}
+.pagination {
+	width: 350px;
+    padding:3px 0px 0px 30px;
+    float: right;
+	vertical-align:middle;
+}
+
+.pagination a, .pagination a:link, .pagination a:visited {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #abbfde;
+    text-decoration: none;
+    color: #0069B7;
+}
+
+.pagination a:hover, .pagination a:active {
+    border: 1px solid #0069B7;
+    color: #0069B7;
+    text-decoration: none;
+}
+
+.pagination span.current {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #0069B7;
+    font-weight: bold;
+    background-color: #0069B7;
+    color: #FFF;
+}
+
+.pagination span.disabled {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #999999;
+    color: #999999;
+}
+
+.span_img {
+	cursor:pointer;
+}
+.title_btnbackground {
+	background-image:url(../images/forum/title_btnbg.jpg);
+	border:0px;
+	height:21px;
+	line-height:21px;
+	width:82px;
+	display:block;
+	cursor:pointer;
+	padding:0px;
+}
+
+.title_btnnew {
+	background-image:url(../images/forum/btn_new.jpg);
+	border:0px;
+	height:30px;
+	line-height:30px;
+	width:100px;
+	display:block;
+	cursor:pointer;
+}
+
+.check_input1 {
+	border:0px;
+}
+
+/*--------------list����css--------------*/
+
+/*--------------forumҳ��css--------------*/
+
+
+.txt_position {
+	background-color:#DFE8F6; 
+	line-height:21px; 
+	height:21px; 
+	padding-left:20px;
+	border:1px solid;
+	border-left-color:#f8f8f8;
+	border-top-color:#f8f8f8;
+	border-bottom-color:#A2C4DD;	
+	border-right-color:#ffffff;
+	text-align:left;
+}
+.author_title1 {
+	color:#003399;
+	font-weight:bold;
+	text-align:center;
+	padding:2px 10px 2px 20px;
+	background-color:#BDD3F7; 
+	line-height:30px;
+	border:1px solid;
+	border-left-color:#f8f8f8;
+	border-top-color:#f8f8f8;
+	border-bottom-color:#A2C4DD;	
+	border-right-color:#A2C4DD;
+}
+.author_conparent {
+	padding:20px;
+	list-style-type:none;
+	text-align:center;
+	background-color:#f1f1f1;
+
+}
+.author_contime {
+	color:#666666;	
+	padding:5px 20px 2px 20px;
+	vertical-align:middle;
+	background-color:#BDD3F7; 
+	border:1px solid;	
+	border-left-color:#f8f8f8;
+	border-top-color:#f8f8f8;
+	border-bottom-color:#A2C4DD;	
+	border-right-color:#f8f8f8;
+}
+.author_conparent_li {
+	padding:5px 0px 5px 0px;
+}
+.title_color1 {
+	color:#339900;
+}
+.title_btnreplay {
+	background-image:url(../images/forum/btn_replay.jpg);
+	border:0px;
+	height:30px;
+	line-height:30px;
+	width:100px;
+	display:block;
+	cursor:pointer;
+}

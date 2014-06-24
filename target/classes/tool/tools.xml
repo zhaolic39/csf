@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<tree id="0">
+	<item text="工具页面" id="zExtractor" open="1"  call="1" select="1">
+      <item text="注册服务" id="service_info" tooltip="注册服务">
+        <userdata name = "url">service_info.jsp</userdata>
+      </item>
+	    <item text="HTTP服务调用" id="http_service"  tooltip="HTTP服务调用">
+        <userdata name = "url">http_service.jsp</userdata>
+      </item>
+	    <item text="修改日志级别" id="update_log_level"  tooltip="修改日志级别">
+        <userdata name = "url">log4j.jsp</userdata>
+      </item>
+	</item>
+</tree> 

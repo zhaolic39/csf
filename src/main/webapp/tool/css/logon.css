@@ -1,0 +1,142 @@
+body {
+	margin:0px;
+	padding: 0px;
+	overflow: auto;
+}
+
+.logon_window_div {
+	position:relative;
+	left: 350px;
+	top:-65px;
+	width: 480px;
+	padding: 0px;
+	margin: 0px;
+	height:200px;
+}
+
+.logon_result_div {
+	position:absolute;
+	height: 20px;
+	margin-left:40px; 
+	width: 100%;
+	top:5px;
+}
+
+.logon_window_table {
+	position:absolute;
+	top:20px;
+	vertical-align: middle;
+	height: 100%
+}
+
+.logon_window_table tr {
+	height: 23px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.logon_window_table .td_label {
+	width: 55px;
+	color:#333333;
+	font-size: 13px; 
+	text-align : center;
+}
+
+.logon_window_table .td_input {
+	width: 140px;
+}
+
+.check_box_input {
+	border: 0px;
+}
+
+.hint_msg_label {
+	font-size:13px;
+	color:#333333;
+	cursor: pointer;
+	border: 0px;
+	vertical-align: middle;
+}
+
+.error-msg {
+	background-color: transparent;
+	border: 0px;
+	color: #D20000;
+	font-family: "宋体", Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	margin-left: 3px;
+	padding-bottom : -3px;
+	vertical-align: bottom;	
+}
+
+/******************************* default style ***************************/
+.body_backgroud, .body_backgroud_green {
+	padding:0;
+	width: 1024px;
+	height: 768px;
+}
+
+.login_btn, .cancel_btn, .login_btn_green, .cancel_btn_green {
+	background-color:transparent;
+	border:0;
+	cursor: pointer;
+	width: 76px;
+	height: 25px;
+}
+
+.cancel_btn, .cancel_btn_green {
+	margin-left: 25px;
+}
+
+.body_backgroud {	
+	background:url(../images/index.jpg) no-repeat top;	
+}        
+.body_left_filled {
+	background:url(../images/index_filled_left.jpg) left top ;
+}       
+.body_right_filled {
+	background:url(../images/index_filled_right.jpg) right top ;
+}
+.body_bottom_filled {
+	background: #EDF1FD url(../images/index_filled_bottom.jpg) center repeat-y;
+}
+.body_bottom_left_filled {
+	background-color: #85A9CD;
+}
+.body_bottom_right_filled {
+	background-color: #C0D2E6;
+}
+
+.login_btn {
+	background:url(../images/btn_logon.jpg) no-repeat center;
+}  
+.cancel_btn {
+	background:url(../images/btn_reset.jpg) no-repeat center;
+}
+
+/******************************* green style ***************************/
+
+.body_backgroud_green {
+	background:url(../../green/images/index.jpg) no-repeat top;
+}
+.body_left_filled_green {
+	background:url(../../green/images/index_filled_left.jpg) left top ;
+}
+.body_right_filled_green {
+	background:url(../../green/images/index_filled_right.jpg) right top ;
+}
+.body_bottom_filled_green {
+	background: #EDF1FD url(../../green/images/index_filled_bottom.jpg) center repeat-y;
+}
+.login_btn_green {
+	background:url(../../green/images/btn_logon.jpg) no-repeat center;
+}  
+.cancel_btn_green {
+	background:url(../../green/images/btn_reset.jpg) no-repeat center;
+}
+.body_bottom_left_filled_green {
+	background:url(../../green/images/index_filled_bottom_left.jpg) center repeat-y;
+}
+.body_bottom_right_filled_green {
+	background:url(../../green/images/index_filled_bottom_right.jpg) center repeat-y;
+}

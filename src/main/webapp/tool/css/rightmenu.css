@@ -1,0 +1,41 @@
+.contextMenu{
+	font-family:arial; font-size:8pt;
+	padding:0 0 0 0;
+	margin: 0 0 0 0;
+	text-align:left;
+	cursor:default;	
+	
+}
+.contextMenuOver, .contextMenuDown{
+	font-family:arial; font-size:8pt;
+	padding:0 0 0 0;
+	margin: 0 0 0 0;
+	text-align:left;
+	background-color:#aacae6;
+	color:#ffffff; 
+	cursor:default;
+	border:1px solid navy;
+}
+.contextMenuOver td{ 
+	color:navy;  
+}
+.menuTable{
+	background-color : #ffffff;
+	border:1px solid;
+	margin : 0px;
+	padding : 0 0 0 0;
+	background-repeat : repeat-y;
+	background-image : url(../images/bg_grad.gif);
+}
+/*add vertical gradient to all levels of menu*/
+#xpstyle .secondMenuTable{
+	background-color : white;
+	border: 1px solid #808080;
+	border-right: outset #ffffff;
+	border-bottom: outset #ffffff;
+	margin : 0px;
+	-moz-user-select : none;
+	padding : 0 0 0 0;
+	background-repeat : repeat-y;
+	background-image : url(../images/bg_grad.gif);
+}

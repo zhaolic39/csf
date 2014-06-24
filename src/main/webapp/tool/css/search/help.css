@@ -1,0 +1,46 @@
+.ind { text-indent : 28px; } 
+body{margin:0px;padding-left:10px;padding-top:10px;padding-right:40px;}
+*{font-size:14px;line-height:26px;}
+p{margin-top:6px;margin-bottom:6px;}
+table.item{
+	border:1px solid #8FB9D0;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+table.item td{
+	font-size:14px;
+	line-height:20px;
+}
+table.item th{
+	text-align:left;
+	background: url('../images/help_item.png') repeat-x 0px 0px;
+	height:27px;
+}
+table.item th a{
+	font-size:14px;
+}
+table.item .SubItem{
+	margin-top:8px;
+	font-weight:bold;
+}
+table.item .SubItem_{
+	padding-left:20px;
+}
+.helpTitle{
+	font-weight:bold;
+	font-size:16px;
+	padding-top:10px;
+}
+
+.copyright {
+	clear: both;
+	border-top: 1px solid #eee;
+	text-align: center;
+	margin: 20px 0 0 0;
+	padding: 15px 0 30px 0;
+	font-size:12px;
+}
+.copyright a {font-size:12px;}
+
+.path {font-size:12px; color:#555555;}
+.path a{font-size:12px; color:#336699;text-decoration:none;}

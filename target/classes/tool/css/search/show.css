@@ -1,0 +1,208 @@
+body { margin: 5px;}
+
+body, table, td { font-size: 12px;}
+
+ul { margin: 0 0 10px 10px;}
+
+li { margin: 3px 0 0 10px;}
+
+table { border: 0; border-spacing: 0;}
+
+form, table {margin: 0;padding: 0;}
+
+img {
+	/*margin: 0 5px 0 5px;*/
+	border: 0px;
+	vertical-align: middle;
+}
+
+h1 {font-size: 18px;}
+
+.backHome {
+	margin: 20px 0 0 0;
+}
+#names {
+	height: 25px;
+}
+#submit {
+	height: 25px;
+}
+.lst {
+	font:17px arial, sans-serif;
+	margin-bottom;0.2em;
+	vertical-align:bottom;
+}
+.toolBar {
+	margin: 10px 0 20px 0;
+}
+
+.navBar {
+	background-color: #d9e1f7;
+	height: 20px;	
+}
+
+.pageBar {
+	clear: both;
+	font-size: 14px;
+	padding: 20px 0 0 30px;
+}
+
+.searchForm {
+	margin: 10px 0 10px 0;
+}
+
+.searchArea {
+	margin-top: 5px;
+	background-color: #eee;
+	padding: 5px 10px 0 10px;
+}
+
+.result {
+	padding-top: 5px;
+}
+	
+.resultInfo {
+	padding: 5px 0 0 5px;
+	height: 18px;
+	background-color: #d9e1f7;
+}
+
+.resultContent {
+	padding-right: 10px;
+}
+
+.statInfo {
+	margin: 10px 0 0 0;
+	border: 1px solid #d9e1f7;
+	min-height: 400px;
+	_height: 400px;
+}
+
+.statTitle {
+	padding: 4px 0 0 4px;
+	font-weight: bold;
+	height: 18px;
+	background-color: #d9e1f7;
+}
+
+.hitsHead, .sourceHead {
+	margin-top: 5px;
+}
+
+.hitsContent {
+	padding-left: 10px;
+}
+
+.sourceInfo {
+	padding: 2px 0 2px 10px;
+}
+
+.databaseDetail {
+	padding: 2px 0 2px 10px;
+}
+	
+.hightlight {
+	color: red;
+	font-weight: bold;
+}
+
+.document {
+	margin-top: 10px;	
+}
+
+.documentSplit {
+	padding: 10px 0 0 0;
+	border-bottom: 1px dotted #d9e1f7;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.score {
+	color: green;
+	display:none;
+}
+
+.field, .summary, .smimilar, .score {
+	margin: 5px 0 0 0;
+	/*font-size:13px;*/
+}
+
+.fieldValue {
+	color: green;
+	padding-right: 10px;
+}
+
+.item {
+	margin: 10px 0 0 0;
+}
+
+.copyright {
+	clear: both;
+	border-top: 1px solid #eee;
+	text-align: center;
+	margin: 20px 0 0 0;
+	padding: 15px 0 30px 0;
+}
+
+.navtitle {
+	font-weight: bold;
+}
+
+.helpNav {
+	padding: 5px 0 0 5px;
+	border: 1px solid #d9e1f7;
+}
+
+.helpNavTitle {
+	padding: 2px 0 0 5px;
+	height: 18px;
+	background-color: #d9e1f7;
+}
+
+.helpNavItem {
+	padding: 2px;
+}
+
+.helpTitle, .helpNavTitle {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#loading {
+	height: 24px;
+	border: 1px solid #000;
+	background-color: #d9e1f7;
+	display: none;
+	position: absolute;
+	z-index: 3;
+	right: 10px;
+	top: 10px;
+	vertical-align: middle;
+	padding-top: 4px;
+}
+
+.mouseOver {
+    background: #3366CC;
+    color:#FFFFFF;
+    }
+
+.suggestMouseOut {
+    background: #FFFFFF;
+    color: #000000;
+}
+
+.hitsMouseOut {
+    background: #FFFFFF;
+    color: #009000;
+}
+
+
+
+#divZoneCnt{border:1px solid #CBE3D6;width:368px;background-color:#FFFFE1;padding:3px;overflow:auto;padding-left:3px;}
+#divZoneCnt td{line-height:18px;}
+
+#divZoneCnt a{font-size:9pt;COLOR:#0033FF; TEXT-DECORATION: none; Cursor:hand}
+#divZoneCnt A:HOVER		{COLOR:red; text-decoration:underline;}

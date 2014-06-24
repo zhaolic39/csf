@@ -1,0 +1,206 @@
+/*
+  css书写顺序
+	1. 文本属性：font,text,background
+	2. 环境属性：width,height,border,padding,margin
+	3. 布局属性：position, float, display
+
+  css命名的一般规则
+    元素类型_元素功能, 比如td_label, td_input
+	或 元素类型_元素特殊属性, 比如text_readonly, text_short
+*/
+.button{
+	color: #15428b !important;
+	border: 1px solid #396086;
+	background: url(../images/button_bg.gif) repeat-x;
+	height: 23px;
+	cursor: pointer;
+	vertical-align: bottom;
+}
+
+/*------------------------表单表格的样式--------------------------------------*/
+
+.table-form {
+	line-height: 150%;
+	border-collapse:collapse;
+	border:0px;
+	width: 100%;
+}
+
+.table-form .td_label{
+	padding-right:4px; 
+	padding-top:4px;
+	padding-bottom:4px;
+	background-color: #DFE8F6; 
+	text-align: right; 
+	font-size: 9pt; 
+	width: 120px;
+	word-break: keep-all;
+	color: #000000;
+	border:1px solid #b8cfe6;
+}
+
+.table-form .td_input{
+	background-color: #fff;
+	text-align: left;
+	padding-left : 1px;
+	white-space: normal;
+	border:1px solid #b8cfe6;
+}
+
+/*------------------------普通表格的样式--------------------------------------*/
+
+.table-normal {
+	line-height: 150%;
+	border-collapse:collapse;
+	border:0px;
+	width: 100%;
+	margin-top: 1px;
+}
+
+.table-normal .tr-toolbar, .table-normal .tr-footer {
+	background-color : #B4CBEB;
+	background: url(../images/toolbar_background.gif);
+	border-bottom : solid #719cd5 0px;
+	border-left : solid #FFFFFF 0px;
+	border-right : solid #719cd5 0px;
+	border-top : solid #FFFFFF 0px;
+	margin : 0px;
+	-moz-user-select : none;
+	padding : 0px;
+	table-layout : fixed;
+	height : 25px;
+} 
+
+.table-normal td{   
+	border:1px solid #D7E4EF;
+} 
+
+.table-normal .tr-toolbar {
+	border-bottom : 0px;
+}
+
+.table-normal .tr-toolbar td {
+	border:0px;
+}
+
+.table-normal .tr-header {
+	background-image:url(../images/table_header_bg.gif);
+	background-color : #D3E2F9;
+	height : 26px;
+	font-weight:bold;
+	font-size:12px;
+	font-family: verdana,arial;
+	color:#276AAB;
+	vertical-align: middle;
+}
+
+.table-normal .tr-header td {
+	border: 1px solid;
+	border-color : #D5E4F9 #ECF8FE #ECF8FE #FFFFFF;
+}
+
+.table-normal .tr-body {
+}
+
+.table-normal .tr-footer {
+}
+
+.btn_first_page, .btn_previous_page, .btn_search_page, .btn_next_page, .btn_last_page {
+	cursor: pointer;
+	height : 16px;
+	width: 15px;
+	margin-left: 5px;
+}
+
+.btn_first_page {
+	background: url(../../../component/simplelist/skins/default/imgs/resultset_first.png) no-repeat left top ;
+}
+
+.btn_previous_page {
+	background: url(../../../component/simplelist/skins/default/imgs/resultset_previous.png) no-repeat left top ;
+}
+
+.btn_search_page {
+	background: url(../../../component/simplelist/skins/default/imgs/iconSearch.gif) no-repeat left top ;
+}
+
+.btn_next_page {
+	background: url(../../../component/simplelist/skins/default/imgs/resultset_next.png) no-repeat left top ;
+}
+
+.btn_last_page {
+	background: url(../../../component/simplelist/skins/default/imgs/resultset_last.png) no-repeat left top ;
+}
+
+/*************** 数据表格基本样式 ***************/
+
+.table_data{
+	width: 100%;
+	border-collapse:collapse;
+	border:0px;
+}
+
+.table_data .td{
+	color: #000;
+}
+
+.table_data .td_label{
+	padding-right:4px; 
+	padding-top:4px;
+	padding-bottom:4px;
+	background-color: #DFE8F6; 
+	text-align: right; 
+	font-size: 9pt; 
+	width: 120px;
+	word-break: keep-all;
+	border:1px solid #b8cfe6;	
+}
+
+
+.table_data .td_input{
+	background-color: #fff;
+	text-align: left;
+	padding: 0px;
+	white-space: normal;
+	border:1px solid #b8cfe6;
+}
+
+.table_data .td_info{
+	background-color: #fff;
+	text-align: left;
+	white-space: normal;
+	padding-left: 5px;
+}
+
+.table_data .tr_textarea{
+	/*height: 65;*/
+}
+
+/*表格标题*/
+.table_title{
+	font-size: 10pt;
+	font-weight: normal;
+	color: #000;
+	text-align: left;
+	padding: 6px;
+	margin: 0px;
+}
+
+/*------------------------分隔栏文字的样式--------------------------------------*/
+
+.seperator-title {
+    text-align: left;
+    color: #15428B;
+    font-weight: bold;
+    text-indent: 30px;
+    white-space: nowrap;
+}
+/*灰色备注文字样式*/
+.grey-title{
+    color:#8F8F8F;
+	padding: 5px;
+	white-space: normal;
+
+}
+
+
