@@ -1,8 +1,8 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%><%@ page import="java.io.*" %><%@ page import="com.epgis.csf.*" 
-%><%@ page import="com.epgis.csf.request.*" %><%@ page import="com.epgis.csf.response.*" %><%@ page import="com.epgis.csf.utils.*" 
-%><%@ page import="com.epgis.csf.exception.BusinessException" %><%@ page import="org.apache.commons.lang.StringUtils" 
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%><%@ page import="java.io.*" %><%@ page import="net.csf.*" 
+%><%@ page import="net.csf.request.*" %><%@ page import="net.csf.response.*" %><%@ page import="net.csf.utils.*" 
+%><%@ page import="net.csf.exception.BusinessException" %><%@ page import="org.apache.commons.lang.StringUtils" 
 %><%@ page import="org.apache.commons.fileupload.*" %><%@ page import="org.apache.commons.fileupload.servlet.*" 
-%><%@ page import="org.apache.commons.logging.*" %><%@ page import="com.epgis.csf.controller.*,com.epgis.csf.conventor.*" %><%!
+%><%@ page import="org.apache.commons.logging.*" %><%@ page import="net.csf.controller.*,net.csf.conventor.*" %><%!
 private static Log logger = LogFactory.getLog(ServiceServlet.class);
 %><%
 String requestStr = "";

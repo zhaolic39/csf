@@ -78,5 +78,6 @@
   </dependencies>
   <build>
     <finalName>csf</finalName>
+    <defaultGoal>compile</defaultGoal>
   </build>
 </project>

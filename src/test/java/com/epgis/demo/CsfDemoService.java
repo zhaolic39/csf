@@ -5,10 +5,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.stereotype.Service;
+import net.csf.annotation.ServiceMethod;
+import net.csf.controller.JsonRequestParam;
 
-import com.epgis.csf.annotation.ServiceMethod;
-import com.epgis.csf.controller.JsonRequestParam;
+import org.springframework.stereotype.Service;
 
 @Service
 public class CsfDemoService {

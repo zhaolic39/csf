@@ -1,9 +1,9 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ page import="java.text.*" %>
 <%@ page import="java.io.*" %>
-<%@ page import="com.epgis.csf.utils.*" %>
-<%@ page import="com.epgis.csf.request.*" %>
-<%@ page import="com.epgis.csf.response.*" %>
+<%@ page import="net.csf.utils.*" %>
+<%@ page import="net.csf.request.*" %>
+<%@ page import="net.csf.response.*" %>
 <%
 Map<String, Object> param = new HashMap<String, Object>();
 param.put("dispatcher_name", "dltest");

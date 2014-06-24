@@ -1,6 +1,6 @@
 package com.epgis.demo;
 
-import com.epgis.csf.controller.ServiceParam;
+import net.csf.controller.ServiceParam;
 
 public class DemoRequest extends ServiceParam{
   private String name;
