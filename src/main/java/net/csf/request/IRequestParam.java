@@ -1,4 +1,6 @@
-package net.csf.controller;
+package net.csf.request;
+
+import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.fileupload.FileItem;
 
@@ -10,6 +12,8 @@ import org.apache.commons.fileupload.FileItem;
  * @version 1.0 2013-10-28
  */
 public interface IRequestParam {
+  public void setHttpRequest(HttpServletRequest request);
+  
   public void setMessageBody(String messageBody);
   
   public void setFileItem(FileItem fileItem);

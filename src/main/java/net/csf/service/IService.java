@@ -1,5 +1,6 @@
 package net.csf.service;
 
+import net.csf.controller.ServiceContext;
 import net.csf.exception.BusinessException;
 
 /**
@@ -28,6 +29,14 @@ public interface IService {
    * @throws Exception 
    */
   public Object doService(Object message, String format) throws BusinessException;
+  
+  /**
+   * 服务实现
+   * @param param
+   * @return
+   * @throws BusinessException
+   */
+  public Object doService(ServiceContext context) throws BusinessException;
   
   /**
    * 服务实现描述

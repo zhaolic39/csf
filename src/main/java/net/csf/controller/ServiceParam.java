@@ -1,6 +1,9 @@
 package net.csf.controller;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.xml.bind.annotation.XmlTransient;
+
+import net.csf.request.IRequestParam;
 
 import org.apache.commons.fileupload.FileItem;
 
@@ -34,5 +37,9 @@ public class ServiceParam implements IRequestParam{
 
   public void setMessageBody(String messageBody) {
     this.messageBody = messageBody;
+  }
+
+  public void setHttpRequest(HttpServletRequest request) {
+    
   }
 }

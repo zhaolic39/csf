@@ -6,6 +6,32 @@
 	targetNamespace="http://www.epgis.com/schema/csf" elementFormDefault="qualified"
 	attributeFormDefault="unqualified">
 	<xsd:import namespace="http://www.springframework.org/schema/beans" />
+	
+	<!--CSF基础配置 -->
+	<xsd:element name="csf-config">
+		<xsd:complexType>
+			<xsd:attribute name="request-parser" type="xsd:string">
+       <xsd:annotation>
+           <xsd:appinfo>
+               <tool:annotation kind="ref">
+                   <tool:expected-type type="java:net.csf.parser.RequestParser"/>
+               </tool:annotation>
+           </xsd:appinfo>
+       </xsd:annotation>
+      </xsd:attribute>
+      <xsd:attribute name="request-interceptor" type="xsd:string">
+       <xsd:annotation>
+           <xsd:appinfo>
+               <tool:annotation kind="ref">
+                   <tool:expected-type type="java:net.csf.parser.RequestParser"/>
+               </tool:annotation>
+           </xsd:appinfo>
+       </xsd:annotation>
+      </xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+	
+	
 	<!--CSF远程服务配置 -->
 	<xsd:element name="csf-remote">
 		<xsd:complexType>

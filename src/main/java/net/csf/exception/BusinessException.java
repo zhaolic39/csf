@@ -11,8 +11,7 @@ public class BusinessException extends Exception {
   private static final long serialVersionUID = 1L;
 
   private String errorDesc;
-  private String errorCode;
-  private String errorResult;
+  private int errorCode = 0;
 
   /**
    * 业务异常构造方法
@@ -20,10 +19,9 @@ public class BusinessException extends Exception {
    * @param desc
    * @param result
    */
-  public BusinessException(String code, String desc, String result) {
+  public BusinessException(int code, String desc, String result) {
     errorCode = code;
     errorDesc = desc;
-    errorResult = result;
   }
 
   public BusinessException() {
@@ -63,19 +61,12 @@ public class BusinessException extends Exception {
     this.errorDesc = errorDesc;
   }
 
-  public String getErrorCode() {
+  public int getErrorCode() {
     return errorCode;
   }
 
-  public void setErrorCode(String errorCode) {
+  public void setErrorCode(int errorCode) {
     this.errorCode = errorCode;
   }
 
-  public String getErrorResult() {
-    return errorResult;
-  }
-
-  public void setErrorResult(String errorResult) {
-    this.errorResult = errorResult;
-  }
 }

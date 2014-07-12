@@ -13,6 +13,7 @@ public class CsfNamespaceHandler extends NamespaceHandlerSupport {
 
     public void init() {
         registerBeanDefinitionParser("csf-remote", CsfRemoteBeanDefinitionParser.getInstance());
+        registerBeanDefinitionParser("csf-config", CsfConfigBeanDefinitionParser.getInstance());
     }
 }
 

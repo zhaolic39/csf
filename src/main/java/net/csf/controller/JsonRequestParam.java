@@ -5,6 +5,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+import javax.servlet.http.HttpServletRequest;
+
+import net.csf.request.IRequestParam;
+
 import org.apache.commons.fileupload.FileItem;
 
 /**
@@ -87,6 +91,10 @@ public class JsonRequestParam implements Map<String, Object>, IRequestParam {
 
   public Set<java.util.Map.Entry<String, Object>> entrySet() {
     return bodyMap.entrySet();
+  }
+
+  public void setHttpRequest(HttpServletRequest request) {
+    
   }
 
 

@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html;charset=utf-8" import="java.util.*"%>
 <%@ page import="java.io.*" %>
-<%@ page import="com.epgis.csf.controller.*" %>
-<%@ page import="com.epgis.csf.utils.*" %>
-<%@ page import="com.epgis.csf.service.*" %>
+<%@ page import="net.csf.controller.*" %>
+<%@ page import="net.csf.utils.*" %>
+<%@ page import="net.csf.service.*" %>
 
 <%@ page import="java.util.Map.Entry"  %>
 <%@ page import="java.util.*" %>

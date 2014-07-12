@@ -1,8 +1,8 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%><%@ page import="java.io.*" %><%@ page import="com.epgis.csf.*" 
-%><%@ page import="com.epgis.csf.request.*" %><%@ page import="com.epgis.csf.conventor.*" %><%@ page import="com.epgis.csf.utils.*" 
-%><%@ page import="com.epgis.csf.exception.BusinessException" %><%@ page import="org.apache.commons.lang.StringUtils" 
-%><%@ page import="org.apache.commons.logging.*" %><%@ page import="com.epgis.csf.controller.*" 
-%><%@ page import="com.epgis.csf.service.*" %><%@ page import="java.util.Map.Entry"  %><%!
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%><%@ page import="java.io.*" %><%@ page import="net.csf.*" 
+%><%@ page import="net.csf.request.*" %><%@ page import="net.csf.conventor.*" %><%@ page import="net.csf.utils.*" 
+%><%@ page import="net.csf.exception.BusinessException" %><%@ page import="org.apache.commons.lang.StringUtils" 
+%><%@ page import="org.apache.commons.logging.*" %><%@ page import="net.csf.controller.*" 
+%><%@ page import="net.csf.service.*" %><%@ page import="java.util.Map.Entry"  %><%!
 private static Log logger = LogFactory.getLog(ServiceServlet.class);
 %><%
 ServiceManager http_manager = (ServiceManager)EasyApplicationContextUtils.getBeanByType(ServiceManager.class);

@@ -35,6 +35,15 @@ public class MessageUtils {
     msg = toRequestMessageFromJson(aa);
     System.out.println(msg.toString()); 
   }
+  
+  public static String toResponseXml(int code, String desc, String body){
+    StringBuffer resXml = new StringBuffer("<?xml version=\"1.0\" encoding=\"UTF-8\"?><response>");
+    resXml.append("<respCode>").append(code).append("</respCode>")
+          .append("<respDesc>").append(desc).append("</respDesc>")
+          .append("<respBody>").append(body).append("</respBody>")
+          .append("</response>");
+    return resXml.toString();
+  }
 
   /**
    * 请求报文转为消息对象

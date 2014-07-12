@@ -21,13 +21,11 @@
         <version>3.1.1.RELEASE</version>
     </dependency>
     
-    
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-webmvc</artifactId>
         <version>3.1.1.RELEASE</version>
     </dependency>
-    
     <dependency>
         <groupId>org.apache.geronimo.specs</groupId>
         <artifactId>geronimo-servlet_2.5_spec</artifactId>
@@ -63,7 +61,6 @@
 	<artifactId>jackson-core-asl</artifactId>
 	<version>1.9.13</version>
 </dependency>
-
 <dependency>
 	<groupId>dom4j</groupId>
 	<artifactId>dom4j</artifactId>
@@ -78,5 +75,6 @@
   </dependencies>
   <build>
     <finalName>csf</finalName>
+    <defaultGoal>compile</defaultGoal>
   </build>
 </project>

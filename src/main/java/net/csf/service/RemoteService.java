@@ -4,7 +4,9 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import net.csf.controller.ServiceContext;
 import net.csf.exception.BusinessException;
+import net.csf.request.IRequestParam;
 import net.csf.request.RequestMessage;
 import net.csf.response.ResponseMessage;
 import net.csf.utils.Constants;
@@ -76,6 +78,10 @@ public class RemoteService implements IService {
 
   public String getImplementDesc() {
     return service_url;
+  }
+
+  public Object doService(ServiceContext context) throws BusinessException {
+    return null;
   }
 
 }

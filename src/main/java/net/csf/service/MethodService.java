@@ -3,9 +3,10 @@ package net.csf.service;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import net.csf.controller.IRequestParam;
+import net.csf.controller.ServiceContext;
 import net.csf.conventor.MessageConventor;
 import net.csf.exception.BusinessException;
+import net.csf.request.IRequestParam;
 import net.csf.request.RequestMessage;
 import net.csf.response.ResponseMessage;
 import net.csf.utils.Constants;
@@ -143,5 +144,9 @@ public class MethodService implements LocalService{
 
   public String getImplementDesc() {
     return service_method.getDeclaringClass().getCanonicalName() + "#" + service_method.getName() + "(..)";
+  }
+
+  public Object doService(ServiceContext context) throws BusinessException {
+    return null;
   }
 }

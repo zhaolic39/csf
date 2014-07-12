@@ -1,20 +1,23 @@
 package net.csf.controller;
 
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import javax.annotation.PostConstruct;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
-import net.csf.annotation.HttpHandler;
 import net.csf.annotation.ServiceMethod;
+import net.csf.config.CsfConfig;
 import net.csf.config.CsfRemoteBeanDefinitionParser;
 import net.csf.config.RemoteServiceConfig;
 import net.csf.exception.BusinessException;
+import net.csf.request.IRequestParam;
 import net.csf.request.RequestMessage;
 import net.csf.response.ResponseMessage;
-import net.csf.service.HttpHandlerService;
 import net.csf.service.IHttpCommandHandler;
 import net.csf.service.IService;
 import net.csf.service.MethodService;
@@ -47,14 +50,44 @@ public class ServiceManager implements ApplicationContextAware{
   
   @Autowired(required = false)
   private List<IHttpCommandHandler> cmdHandlerList;
+  @Autowired
+  private CsfConfig csfConfig;
   
   private Map<String, IService> serviceMap = new HashMap<String, IService>();
 
   @PostConstruct
   public void init() {
-    registHttpHandler();
     registHttpService();
     registRemoteService();
+  }
+  
+  /**
+   * 服务调用入口
+   * @param request
+   * @param response
+   * @throws IOException 
+   */
+  public void handleRequest(HttpServletRequest request, HttpServletResponse response) throws IOException{
+    ServiceContext context = new ServiceContext();
+    context.setRequest(request);
+    context.setResponse(response);
+    
+    IRequestParam param = csfConfig.getRequestParser().parser(context);
+    context.setRequestParam(param);
+    
+    try {
+      IService service = csfConfig.getServiceRouter().routeService(context);  //选择处理器
+      context.setService(service);
+      
+      Object result = service.doService(context);
+      context.setResult(result);
+      
+    } catch (BusinessException e) {
+      log.error(e, e);
+      context.setResultCode(e.getErrorCode());
+      context.setError(e.getErrorDesc());
+    }
+    csfConfig.getResponseParser().parser(context);
   }
   
   /**
@@ -73,32 +106,6 @@ public class ServiceManager implements ApplicationContextAware{
     }
   }
 
-  /**
-   * 注册HttpHandler
-   */
-  private void registHttpHandler(){
-    if(cmdHandlerList == null) return;
-    log.info("开始注册HTTP服务(旧版本)");
-    HttpHandler httpHandler = null;
-    for (IHttpCommandHandler l : cmdHandlerList) {
-      try {
-        httpHandler = l.getClass().getAnnotation(HttpHandler.class);
-      } catch (Exception e) {
-        log.error(e.getMessage());
-      }
-      if (httpHandler != null) {
-        String command = httpHandler.command();
-        String desc = httpHandler.desc();
-        
-        HttpHandlerService httpHandlerService = new HttpHandlerService(command, l, desc);
-        serviceMap.put(command, httpHandlerService);
-        log.info("已注册HTTP命令【" + command + "】的处理类【" + l.getClass() + "】");
-      } else {
-        log.error("类" + l.getClass() + "没有Annotation一个对应的HTTP命令！不对其进行注册!");
-      }
-    }
-  }
-  
   /**
    * 注册服务
    */
@@ -164,7 +171,7 @@ public class ServiceManager implements ApplicationContextAware{
     }
     
     log.error("没有找到HTTP命令【" + command + "】相应的处理器，请检查业务逻辑");
-    throw new BusinessException("1", "没有找到HTTP命令【" + command + "】相应的处理器，请检查业务逻辑",
+    throw new BusinessException(1, "没有找到HTTP命令【" + command + "】相应的处理器，请检查业务逻辑",
         "没有找到HTTP命令【" + command + "】相应的处理器，请检查业务逻辑");
   }
 

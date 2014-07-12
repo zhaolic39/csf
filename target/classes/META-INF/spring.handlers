@@ -1,1 +1,1 @@
-http\://www.epgis.com/schema/csf=com.epgis.csf.config.CsfNamespaceHandler
+http\://www.epgis.com/schema/csf=net.csf.config.CsfNamespaceHandler
